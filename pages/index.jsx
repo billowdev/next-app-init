@@ -3,13 +3,10 @@ import Image from "next/image";
 import styles from "../styles/Home.module.css";
 import { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { pageLoaded } from "../redux/actions/ui";
-import { loadArticles } from "../redux/actions/aticles";
-import {
-  getArticlesData,
-  getArticlesIncluded,
-} from "../redux/selectors/articles";
-import { loadLocalStorage } from "../helpers/useLocalStorage";
+import { pageLoaded } from "redux/actions/ui";
+import { loadArticles } from "redux/actions/aticles";
+import { getArticlesData, getArticlesIncluded } from "redux/selectors/articles";
+import { loadLocalStorage } from "helpers/useLocalStorage";
 
 export default function Home() {
   const dispatch = useDispatch();
@@ -17,10 +14,8 @@ export default function Home() {
   const articleIncluded = useSelector(getArticlesIncluded);
   const [dataLocal, setDataLocal] = useState("");
   useEffect(() => {
-    return () => {
-      dispatch(pageLoaded);
-      dispatch(loadArticles());
-    };
+    dispatch(pageLoaded);
+    dispatch(loadArticles());
   }, [dispatch]);
 
   useEffect(() => {

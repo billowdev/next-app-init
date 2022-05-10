@@ -5,13 +5,16 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
+    "build-html": "next build && next export",
     "start": "next start",
     "lint": "next lint",
-    "test": "jest --watch"
+    "test": "jest --watch",
+    "clean": "rimraf node_modules/.cache .next"
   },
   "dependencies": {
     "axios": "^0.27.2",
     "next": "12.1.6",
+    "next-redux-wrapper": "^7.0.5",
     "react": "18.1.0",
     "react-dom": "18.1.0",
     "react-redux": "^8.0.1",
@@ -22,6 +25,12 @@
     "@babel/core": "^7.17.10",
     "@testing-library/jest-dom": "^5.16.4",
     "@testing-library/react": "^13.2.0",
+    "babel-core": "^6.26.3",
+    "babel-eslint": "^10.1.0",
+    "babel-jest": "^28.1.0",
+    "babel-plugin-inline-dotenv": "^1.7.0",
+    "babel-plugin-module-resolver": "^4.1.0",
+    "babel-plugin-styled-components": "^2.0.7",
     "eslint": "8.15.0",
     "eslint-config-next": "12.1.6",
     "jest": "^28.1.0"

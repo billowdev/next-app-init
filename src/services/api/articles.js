@@ -1,5 +1,5 @@
 import axios from "axios";
-import config from "../../config"
+import config from "../../../config"
 const BASE_URL = config.API_ENDPOINT;
 export default {
 	getArticles: async () => {
