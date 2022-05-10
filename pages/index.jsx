@@ -44,24 +44,16 @@ export default function Home() {
         </h1>
 
         <p className={styles.description}>
-          Get started by editing 
+          Get started by editing
           <code className={styles.code}>pages/index.js</code>
         </p>
 
         <p className={styles.description}>
           example use localstorage <br />
-          <code className={styles.code}> 
-          key: action value:{dataLocal} <br/>
+          <code className={styles.code}>
+            key: action value:{dataLocal} <br />
           </code>
         </p>
-
-        <p className={styles.description}>
-          Project structure <br />
-          <code className={styles.code}> 
-         
-          </code>
-        </p>
-
         <div className={styles.jsonApi}>
           <h2>GitHub JSON API &rarr;</h2>
           <p>test dispatch data</p>
