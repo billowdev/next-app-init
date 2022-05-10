@@ -13,62 +13,65 @@ yarn dev
 
 ## Project structure
 ```
- next-app-init
- ┣ components
- ┃ ┗ Layout.jsx
- ┣ helpers
- ┃ ┗ useLocalStorage.js
- ┣ pages
- ┃ ┣ index.jsx
- ┃ ┗ _app.jsx
- ┣ public
- ┃ ┣ android-chrome-192x192.png
- ┃ ┣ android-chrome-512x512.png
- ┃ ┣ apple-touch-icon.png
- ┃ ┣ billowdev.png
- ┃ ┣ favicon-16x16.png
- ┃ ┣ favicon-32x32.png
- ┃ ┣ favicon.ico
- ┃ ┗ site.webmanifest
- ┣ redux
- ┃ ┣ actions
- ┃ ┃ ┣ aticles.js
- ┃ ┃ ┗ ui.js
- ┃ ┣ middleware
- ┃ ┃ ┣ articles.js
- ┃ ┃ ┣ index.js
- ┃ ┃ ┗ ui.js
- ┃ ┣ reducers
- ┃ ┃ ┣ articles.js
- ┃ ┃ ┣ index.js
- ┃ ┃ ┗ ui.js
- ┃ ┣ selectors
- ┃ ┃ ┣ articles.js
- ┃ ┃ ┗ ui.js
- ┃ ┗ store.js
- ┣ services
- ┃ ┣ api
- ┃ ┃ ┣ articles.js
- ┃ ┃ ┗ index.js
- ┃ ┣ logger
- ┃ ┃ ┣ console.js
- ┃ ┃ ┗ elasticSearch.js
- ┃ ┗ index.js
- ┣ styles
- ┃ ┣ globals.css
- ┃ ┗ Home.module.css
- ┣ tests
- ┃ ┣ articles.test.js
- ┃ ┗ ui.test.js
- ┣ .env.local
- ┣ .eslintrc.json
- ┣ .gitignore
- ┣ config.js
- ┣ jest.config.js
- ┣ next.config.js
- ┣ package.json
- ┣ README.md
- ┗ yarn.lock
+ 📦next-redux-app-init
+ ┣ 📂pages
+ ┃ ┣ 📜index.jsx
+ ┃ ┗ 📜_app.jsx
+ ┣ 📂public
+ ┃ ┣ 📜android-chrome-192x192.png
+ ┃ ┣ 📜android-chrome-512x512.png
+ ┃ ┣ 📜apple-touch-icon.png
+ ┃ ┣ 📜billowdev.png
+ ┃ ┣ 📜favicon-16x16.png
+ ┃ ┣ 📜favicon-32x32.png
+ ┃ ┣ 📜favicon.ico
+ ┃ ┗ 📜site.webmanifest
+ ┣ 📂src
+ ┃ ┣ 📂components
+ ┃ ┃ ┗ 📜Layout.jsx
+ ┃ ┣ 📂helpers
+ ┃ ┃ ┗ 📜useLocalStorage.js
+ ┃ ┣ 📂redux
+ ┃ ┃ ┣ 📂actions
+ ┃ ┃ ┃ ┣ 📜aticles.js
+ ┃ ┃ ┃ ┗ 📜ui.js
+ ┃ ┃ ┣ 📂middleware
+ ┃ ┃ ┃ ┣ 📜articles.js
+ ┃ ┃ ┃ ┣ 📜index.js
+ ┃ ┃ ┃ ┗ 📜ui.js
+ ┃ ┃ ┣ 📂reducers
+ ┃ ┃ ┃ ┣ 📜articles.js
+ ┃ ┃ ┃ ┣ 📜index.js
+ ┃ ┃ ┃ ┗ 📜ui.js
+ ┃ ┃ ┣ 📂selectors
+ ┃ ┃ ┃ ┣ 📜articles.js
+ ┃ ┃ ┃ ┗ 📜ui.js
+ ┃ ┃ ┗ 📜store.js
+ ┃ ┣ 📂services
+ ┃ ┃ ┣ 📂api
+ ┃ ┃ ┃ ┣ 📜articles.js
+ ┃ ┃ ┃ ┗ 📜index.js
+ ┃ ┃ ┣ 📂logger
+ ┃ ┃ ┃ ┣ 📜console.js
+ ┃ ┃ ┃ ┗ 📜elasticSearch.js
+ ┃ ┃ ┗ 📜index.js
+ ┃ ┗ 📂tests
+ ┃ ┃ ┣ 📜articles.test.js
+ ┃ ┃ ┗ 📜ui.test.js
+ ┣ 📂styles
+ ┃ ┣ 📜globals.css
+ ┃ ┗ 📜Home.module.css
+ ┣ 📜.babelrc
+ ┣ 📜.env
+ ┣ 📜.eslintrc.json
+ ┣ 📜.gitignore
+ ┣ 📜config.js
+ ┣ 📜env.local
+ ┣ 📜jest.config.js
+ ┣ 📜next.config.js
+ ┣ 📜package.json
+ ┣ 📜README.md
+ ┗ 📜yarn.lock
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.

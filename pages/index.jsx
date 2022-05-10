@@ -70,6 +70,7 @@ export default function Home() {
           </div>
         </div>
 
+
         <div className={styles.grid}>
           <a href="https://nextjs.org/docs" className={styles.card}>
             <h2>Next.js &rarr;</h2>
