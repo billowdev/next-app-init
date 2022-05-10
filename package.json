@@ -1,0 +1,34 @@
+{
+  "name": "billowdev-client",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "test": "jest --watch"
+  },
+  "dependencies": {
+    "axios": "^0.27.2",
+    "next": "12.1.6",
+    "react": "18.1.0",
+    "react-dom": "18.1.0",
+    "react-redux": "^8.0.1",
+    "redux": "^4.2.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.17.10",
+    "@babel/core": "^7.17.10",
+    "@testing-library/jest-dom": "^5.16.4",
+    "@testing-library/react": "^13.2.0",
+    "eslint": "8.15.0",
+    "eslint-config-next": "12.1.6",
+    "jest": "^28.1.0"
+  },
+  "repository": "https://github.com/billowdev/next-redux-app-init",
+  "license": "ISC",
+  "description": "next.js react-redux axios",
+  "main": "index.js",
+  "author": "Akkarapon Phikulsri <lacakira@gmail.com>"
+}
