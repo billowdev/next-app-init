@@ -1,0 +1,52 @@
+{
+	"data": [
+		{
+			"type": "articles",
+			"id": "1",
+			"attributes": {
+				"title": "Hello John",
+				"body": "The shortest article. Ever. John"
+			},
+			"relationships": {
+				"author": {
+					"data": {
+						"id": "42",
+						"type": "people"
+					}
+				}
+			}
+		},
+		{
+			"type": "articles",
+			"id": "2",
+			"attributes": {
+				"title": "JSON:API Hello billow",
+				"body": "The shortest article. Ever. billow"
+			},
+			"relationships": {
+				"author": {
+					"data": {
+						"id": "43",
+						"type": "people"
+					}
+				}
+			}
+		}
+	],
+	"included": [
+		{
+			"type": "people",
+			"id": "42",
+			"attributes": {
+				"name": "John"
+			}
+		},
+		{
+			"type": "people",
+			"id": "43",
+			"attributes": {
+				"name": "billow"
+			}
+		}
+	]
+}
